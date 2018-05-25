@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import EmployeeList from './components/EmployeeList';
 
 console.log("hzouitine");
 
@@ -27,8 +28,9 @@ class App extends React.Component {
     }
 
     render() {
-        return (<div>{this.state.employees}</div>
-            //<EmployeeList employees={this.state.employees}/>
+        return (<div>
+                <EmployeeList employees={this.state.employees}/>
+            </div>
         )
     }
 }
